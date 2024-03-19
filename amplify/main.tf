@@ -1,7 +1,17 @@
+provider "aws" {
+    region = "us-east-1"
+}
+
+locals {
+    aws_key = "PairOneV"   
+}
+
 resource "aws_amplify_app" "tut_amplify_app" {
     name = var.app_name
     repository = var.repository
     oauth_token = var.token
+
+    build_spec = "build.yml"
 }
 
 resource "aws_amplify_branch" "tut_amplify_branch" {

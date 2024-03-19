@@ -7,7 +7,7 @@ variable "token" {
 variable "repository" {
   type        = string
   description = "github repo url"
-  default     = "" # "YOUR SOURCE-CODE REPO URL"
+  default     = "https://github.com/CTB333/swen514-activity-14" # "YOUR SOURCE-CODE REPO URL"
 }
 
 variable "app_name" {
@@ -25,6 +25,6 @@ variable "branch_name" {
 
 variable "domain_name" {
   type        = string
-  default     = "tut_awsamplifyapp.com"
+  default     = "tutawsamplifyapp.com"
   description = "AWS Amplify Domain Name"
 }

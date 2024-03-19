@@ -1,0 +1,14 @@
+version: 1
+frontend:
+  phases:
+    prebuild:
+      commands:
+        - cd react-fe
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - "**/*"
