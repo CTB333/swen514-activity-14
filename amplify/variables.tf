@@ -19,7 +19,7 @@ variable "app_name" {
 variable "branch_name" {
   type        = string
   description = "AWS Amplify App Repo Branch Name"
-  default     = "master"
+  default     = "main"
 }
 
 
