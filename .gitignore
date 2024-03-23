@@ -1,3 +1,4 @@
 video_clips
 amplify/token.txt
 .terraform*
+poly_lambda/node_modules
